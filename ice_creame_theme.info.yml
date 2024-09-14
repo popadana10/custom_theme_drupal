@@ -1,0 +1,19 @@
+name: Ice Creame Theme 
+type: theme
+description: 'Custom Theme for Ice Creame.'
+package: Other
+core_version_requirement: ^10 || ^11
+base theme: false
+
+libraries:
+  - ice_creame_theme/global-styling
+
+regions:
+  branding: Branding
+  navigation: Main navigation
+  featured: Featured
+  content: Content
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_bottom: Footer Bottom

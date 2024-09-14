@@ -1,0 +1,17 @@
+<section class="about section-padding bg-white"></section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12 mb-2">
+                <img class="img-fluid newsletter-image" src="{{ file_url(node.field_image.entity.uri.value) }}" alt="" width="1125" height="750" loading="lazy">
+            </div>
+            <div class="col-lg-6 col-12">
+                <h4 class="mb-3">
+                    {{label}}
+                </h4>
+                <p>
+                  {{content.body}}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ language.attributes.lang }}"{{ html_attributes }}>
+  <head>
+    <head-placeholder token="{{ placeholder_token|raw }}"> <!-- Required by Drupal to include JS/CSS placeholders -->
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token|raw }}"> <!-- Required by Drupal to load CSS -->
+    <js-placeholder token="{{ placeholder_token|raw }}"> <!-- Required by Drupal to load JS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body{{ body_attributes }}>
+    <a href="#main-content" class="visually-hidden focusable skip-link">{{ 'Skip to main content'|t }}</a>
+
+    {# Page template rendering #}
+    {{ page_top }}
+    {{ page }}
+    {{ page_bottom }}
+
+    {# Attach libraries here #}
+    {{ attach_library('ice_creame_theme/global-styling') }}
+  </body>
+</html>
